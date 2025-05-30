@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Klimat</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1,
+      maximum-scale=1"
+    />
+    <link rel="stylesheet" href="libs/swiper/swiper.css" />
+    <link rel="stylesheet" href="libs/select2/select2.min.css" />
+    <link rel="stylesheet" href="libs/inputTel/inputTel.css" />
+
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper-content">
+      <div class="wrapper-form">
+        <form action="#">
+          <div class="form-content">
+            <h3 class="form-content__title title-margin">Свяжитесь с нами</h3>
+            <div class="form-content__text">
+              Наши эксперты ответят на вопросы об оборудовании и помогут с
+              подбором, проконсультируют по вопросам сервисной и технической
+              поддержки
+            </div>
+
+            <div class="form-content__top">
+              <div class="form-content__label">Выбор страны*</div>
+              <div class="form-content__radios" data-field="COUNTRY">
+                <label class="radio">
+                  <span class="radio__inner">
+                    <input
+                      type="radio"
+                      data-country
+                      data-resident="true"
+                      name="choose"
+                    />
+                    <span></span>
+                  </span>
+                  <span class="radio__text">Резидент РФ</span>
+                </label>
+                <label class="radio">
+                  <span class="radio__inner">
+                    <input
+                      type="radio"
+                      name="choose"
+                      data-resident="false"
+                      data-country
+                    />
+                    <span></span>
+                  </span>
+                  <span class="radio__text">Не резидент РФ</span>
+                </label>
+              </div>
+              <div class="form-content__info center">
+                <div class="form-content__left">
+                  <label class="field field-select" data-field="REGION">
+                    <select class="select2" data-placeholder="Регион*">
+                      <option value=""></option>
+                      <option value="AL">Белгородская область</option>
+                      <option value="AL">Брянская область</option>
+                      <option value="AL">Белгородская область</option>
+                      <option value="AL">Брянская область</option>
+                      <option value="AL">Белгородская область</option>
+                      <option value="AL">Брянская область</option>
+                      <option value="AL">Белгородская область</option>
+                      <option value="AL">Брянская область</option>
+                      <option value="AL">Белгородская область</option>
+                      <option value="AL">Брянская область</option>
+                      <option value="AL">Белгородская область</option>
+                      <option value="AL">Брянская область</option>
+                      <option value="AL">Белгородская область</option>
+                      <option value="AL">Брянская область</option>
+                      <option value="AL">Белгородская область</option>
+                      <option value="AL">Брянская область</option>
+                      <option value="AL">Белгородская область</option>
+                      <option value="AL">Брянская область</option>
+                      <option value="AL">Белгородская область</option>
+                      <option value="AL">Брянская область</option>
+                      <option value="AL">Белгородская область</option>
+                      <option value="AL">Брянская область</option>
+                    </select>
+                  </label>
+                  <label class="field">
+                    <input type="text" />
+                    <span class="field__label">Название компании*</span>
+                  </label>
+
+                  <label class="field">
+                    <input type="number" />
+                    <span class="field__label">ИНН</span>
+                  </label>
+                  <div class="field-file__container">
+                    <div class="field-file__label">Загрузите проект*</div>
+                    <div class="field-file">
+                      <input type="file" />
+
+                      <div class="field-file__icon">
+                        <img src="images/icon-field.svg" alt="" />
+                      </div>
+                      <div class="field-file__info">
+                        <div class="field-file__info--text">
+                          Загрузите один файл сюда Формат jpeg, png, docx, xlsx,
+                          pdf, объемом не более 5 Мб
+                        </div>
+
+                        <p
+                          class="file-error"
+                          style="color: red; display: none"
+                        ></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="captcha captcha-right desktop">
+                    <img src="images/captcha.png" alt="" />
+                  </div>
+                </div>
+
+                <div
+                  class="form-content__right form-content__right--margin height"
+                >
+                  <label class="field">
+                    <input type="text" />
+                    <span class="field__label">ФИО*</span>
+                  </label>
+                  <label class="field">
+                    <input type="text" />
+                    <span class="field__label">Email*</span>
+                  </label>
+                  <div class="form-group">
+                    <input
+                      id="phone"
+                      type="tel"
+                      name="leyka_donor_phone"
+                      class="form-control tel"
+                      inputmode="tel"
+                      value=""
+                    />
+                  </div>
+
+                  <label class="field field-area">
+                    <textarea></textarea>
+                    <span class="field__label">Сообщение</span>
+                  </label>
+
+                  <div class="captcha mobile">
+                    <img src="images/captcha.png" alt="" />
+                  </div>
+
+                  <div class="form-content__foot">
+                    <a
+                      href="#thanks"
+                      data-fancybox
+                      type="submit"
+                      class="form-content__btn btn btn-red"
+                    >
+                      <img src="images/arrow-btn.svg" alt="" />
+                      Отправить
+                    </a>
+                    <label class="checkbox">
+                      <span class="checkbox__inner">
+                        <input type="checkbox" checked />
+                        <span></span>
+                      </span>
+                      <span class="checkbox__text"
+                        >Нажимая кнопку, я принимаю
+                        <a href="#">условия соглашения</a>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Отбивка для все модалок -->
+
+    <div class="thanks thanks-modal" id="thanks" style="display: none">
+      <div class="thanks__close" data-fancybox-close>
+        <svg
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M22.5 7.5L7.5 22.5"
+            stroke="#4F4F4F"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7.5 7.5L22.5 22.5"
+            stroke="#4F4F4F"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div class="thanks__info">
+        <div class="thanks__title">
+          Ваше обращение <br />
+          в отдел продаж принято
+        </div>
+        <div class="thanks__text">
+          Менеджер отдела продаж свяжется <br />
+          с вами в течение 1 рабочего дня
+        </div>
+      </div>
+    </div>
+
+    <script src="libs/jquery/jquery-3.2.1.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="libs/select2/select2.min.js"></script>
+    <script src="libs/inputTel/inputTel.js"></script>
+    <script src="libs/swiper/swiper.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
